@@ -15,6 +15,7 @@
 <body>
 <div class="wrapper">
     <header>
+        <img class="logo" width="180" height="147" src="images/phpse-logo.png">
         <h1 class="header">PHP Sweden</h1>
         <p class="header">Swedish PHP developers</p>
 
@@ -46,11 +47,12 @@
         <p>Send a PR and you will be able to access our slack channel</p>
 
         <h3>
-            <a id="members" class="anchor" href="#members" aria-hidden="true"><span aria-hidden="true"
-                                                                                    class="octicon octicon-link"></span></a>Members
+            <a id="members" class="anchor" href="#members" aria-hidden="true">
+                <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>Members <span id="js-members-count"></span>
         </h3>
 
-        <div id="js-members"></div>
+        <div id="js-members" class="members-container"></div>
 
         <h3>
             <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span
