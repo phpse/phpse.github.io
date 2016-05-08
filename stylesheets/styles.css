@@ -26,7 +26,7 @@ time, mark, audio, video {
 /* Base text styles */
 
 body {
-  padding:10px 50px 0 0;
+  padding:0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
@@ -288,8 +288,8 @@ header li {
 }
 
 header li:hover {
-	background: #C3001D;
-	background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
+    background: #C3001D;
+    background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
   background: -webkit-linear-gradient(top, #C3001D 0%,#950119 100%);
   background: -o-linear-gradient(top, #C3001D 0%,#950119 100%);
@@ -348,20 +348,21 @@ footer {
     width:auto;
   }
 
-	footer {
-		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
-		padding:0;
-	}
-
-  header {
-    padding-right:320px;
-  }
+    footer {
+        border-top: 1px solid #ccc;
+        margin: 20px 50px 20px 50px;
+        padding: 0;
+    }
 
   section {
-    padding:20px 84px 20px 50px;
+    padding:20px 50px 20px 50px;
     margin:0 0 20px;
   }
+
+    header {
+        padding: 20px 50px 20px 50px;
+        margin: 0;
+    }
 
   header a small {
     display:inline;
@@ -380,17 +381,18 @@ footer {
   }
 
   header {
-    padding:10px 20px 0;
-		margin-right: 0;
+      padding: 20px 20px 20px 20px;
+    margin: 0;
   }
 
 	section {
-    padding:10px 0 10px 20px;
+    padding:10px 20px 10px 20px;
     margin:0 0 30px;
   }
 
 	footer {
-		margin: 0 0 0 30px;
+        padding: 0;
+        margin: 10px 20px 10px 20px;
 	}
 
   header ul, header p.view {
