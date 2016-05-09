@@ -215,19 +215,18 @@ td {
 /* Header */
 
 header {
-	background-color: #171717;
+	background-color: #5883B8;
 	color: #FDFDFB;
-  width:170px;
+  width:180px;
   float:left;
   position:fixed;
-	border: 1px solid #000;
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	-moz-border-radius-topright: 4px;
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
+  padding: 15px 25px 22px 25px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
@@ -242,7 +241,7 @@ h1.header {
 	font-weight: 300;
 	line-height: 1.3em;
 	border-bottom: none;
-	margin-top: 0;
+	margin-top: 15px;
 }
 
 
@@ -258,6 +257,13 @@ a.name {
 	white-space: nowrap;
 }
 
+header .logo {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 header ul {
   list-style:none;
   padding:0;
@@ -271,30 +277,30 @@ header li {
 	line-height: 1em;
 	padding: 6px 6px 6px 7px;
 
-	background: #AF0011;
-	background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%);
+  background: rgb(255, 207, 34);
+	background: -moz-linear-gradient(top, #ffa809 0%, #A05303 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #AF0011 0%,#820011 100%);
-  background: -o-linear-gradient(top, #AF0011 0%,#820011 100%);
-  background: -ms-linear-gradient(top, #AF0011 0%,#820011 100%);
-  background: linear-gradient(top, #AF0011 0%,#820011 100%);
+  background: -webkit-linear-gradient(top, #ffa809 0%, #A05303 100%);
+  background: -o-linear-gradient(top, #ffa809 0%,#A05303 100%);
+  background: -ms-linear-gradient(top, #ffa809 0%,#A05303 100%);
+  background: linear-gradient(top, #ffa809 0%,#A05303 100%);
 
 	border-radius:4px;
   border:1px solid #0D0D0D;
 
-	-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
-	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	-webkit-box-shadow: inset 0px 1px 1px 0 #AB6E00;
+	box-shadow: inset 0px 1px 1px 0 #AB6E00;
 
 }
 
 header li:hover {
     background: #C3001D;
-    background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
+    background: -moz-linear-gradient(top, #805200 0%, #AB6E00 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #C3001D 0%,#950119 100%);
-  background: -o-linear-gradient(top, #C3001D 0%,#950119 100%);
-  background: -ms-linear-gradient(top, #C3001D 0%,#950119 100%);
-  background: linear-gradient(top, #C3001D 0%,#950119 100%);
+  background: -webkit-linear-gradient(top, #805200 0%,#AB6E00 100%);
+  background: -o-linear-gradient(top, #805200 0%,#AB6E00 100%);
+  background: -ms-linear-gradient(top, #805200 0%,#AB6E00 100%);
+  background: linear-gradient(top, #805200 0%,#AB6E00 100%);
 }
 
 a.buttons {
@@ -319,9 +325,33 @@ a.buttons:hover {
 /* Section - for main page content */
 
 section {
-  width:650px;
+  width:656px;
   float:right;
   padding-bottom:50px;
+}
+
+/* Members list */
+
+.members-container {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.members-container ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.members-container ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.members-container ul img {
+    display: block;
+    margin-bottom: 5px;
 }
 
 
@@ -332,7 +362,7 @@ footer {
   float:left;
   position:fixed;
   bottom:10px;
-	padding-left: 50px;
+  padding-left: 50px;
 }
 
 @media print, screen and (max-width: 960px) {
