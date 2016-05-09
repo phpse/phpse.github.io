@@ -11,13 +11,13 @@ jQuery(document).ready(function($) {
 
             for (var i in members) {
                 var name =  members[i].name;
-                var avatar = 'https://github.com/' + members[i].github + '.png?size=200';
-                var github = 'https://github.com/' + members[i].github;
+                var githubUrl = 'https://github.com/' + members[i].github;
+                var avatarUrl = githubUrl + '.png?size=200';
 
                 $memberList.append(
                     $('<li/>').append(
-                        $('<a/>').attr({ href: github, target: '_blank' }).append(
-                            $('<img/>').attr('src', avatar),
+                        $('<a/>').attr({ href: githubUrl, target: '_blank' }).append(
+                            $('<img/>').attr('src', avatarUrl),
                             $('<span/>').text(name)
                         )
                     )
