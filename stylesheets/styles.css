@@ -352,6 +352,7 @@ section {
 .members-container ul img {
     display: block;
     margin-bottom: 5px;
+    max-width: 200px;
 }
 
 
